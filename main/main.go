@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"time"
 )
 
-import rect "./rect"
+//import "../rect"
 
 type Person struct {
 	name  string
@@ -38,8 +39,9 @@ func main() {
 	//结构体例子
 	structDemo()
 
-	fmt.Println(rect)
-	//r := rect{width: 10, height: 15}
+	//interface_test()
+	fmt.Println(math.Pi)
+
 }
 
 func structDemo() {
