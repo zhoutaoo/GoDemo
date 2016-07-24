@@ -37,7 +37,7 @@ func (c *circle) perimeter() float64 { //周长
 }
 
 // ----------- 接口的使用 -----------//
-func interface_test() {
+func Interface_test() {
 	r := rect{width: 2.9, height: 4.8}
 	c := circle{radius: 4.3}
 

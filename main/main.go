@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-//import "../rect"
+import "../rect"
 
 type Person struct {
 	name  string
@@ -39,7 +39,7 @@ func main() {
 	//结构体例子
 	structDemo()
 
-	//interface_test()
+	shape.Interface_test()
 	fmt.Println(math.Pi)
 
 }
