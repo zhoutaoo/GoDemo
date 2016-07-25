@@ -158,8 +158,17 @@ func arrayDemo() {
 
 func timeDemo() {
 	fmt.Println("------------time start------------")
-	var nowTime = time.Now()
+	//当前时间戳
+	fmt.Println(time.Now().Unix())
+	//str格式化时间
+	nowTime := time.Now().Format("2006-02-02 15:04:05") // 这是个奇葩,必须是这个时间点, 据说是go诞生之日, 记忆方法:6-1-2-3-4-5
 	fmt.Println(nowTime)
+	//str格式化时间转时间戳
+	the_time := time.Date(2014, 1, 7, 5, 50, 4, 0, time.Local)
+	fmt.Println(the_time.Unix())
+	//时间戳转str格式化时间
+	str_time := time.Unix(1389058332, 0).Format("2006-01-02 15:04:05")
+	fmt.Print(str_time)
 	fmt.Println("\n------------time end------------")
 }
 
